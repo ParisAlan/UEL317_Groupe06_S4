@@ -62,30 +62,30 @@
 
                         <div class="programme-item">
                             <div class="programme-date">
-                                <span class="date-day">07</span>
-                                <span class="date-month">mai</span>
-                            </div>
-                            <div class="programme-info">
-                                <span class="prog-title">Titre événement</span>
-                                <span class="prog-meta">Horaire – Lieu</span>
-                            </div>
-                        </div>
-
-                        <div class="programme-item">
-                            <div class="programme-date">
                                 <span class="date-day">09</span>
                                 <span class="date-month">mai</span>
                             </div>
                             <div class="programme-info">
-                                <span class="prog-title">Titre événement</span>
-                                <span class="prog-meta">Horaire – Lieu</span>
+                                <span class="prog-title">Sonate au Jardin</span>
+                                <span class="prog-meta">13h30 / 19h – Parc du Château d'Aux</span>
                             </div>
                         </div>
 
                         <div class="programme-item">
                             <div class="programme-date">
                                 <span class="date-day">27</span>
-                                <span class="date-month">mai</span>
+                                <span class="date-month">Juin</span>
+                            </div>
+                            <div class="programme-info">
+                                <span class="prog-title">Instant Ludique de Mai</span>
+                                <span class="prog-meta">10h / 17h30 – Bibliothèque de Gueugnon</span>
+                            </div>
+                        </div>
+
+                        <div class="programme-item">
+                            <div class="programme-date">
+                                <span class="date-day">27</span>
+                                <span class="date-month">Juin</span>
                             </div>
                             <div class="programme-info">
                                 <span class="prog-title">Instant Ludique de Mai</span>
@@ -103,7 +103,7 @@
     </div>
 </section>
 
-<section class="ville-banner section-padding">
+<section class="ville-banner section-padding-cta">
     <div class="container">
         <div class="ville-inner">
 

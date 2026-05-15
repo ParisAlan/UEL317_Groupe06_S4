@@ -57,7 +57,11 @@
 }
 
 .section-padding {
-    padding: 50px 30px;
+    padding: 45px 30px 70px 30px;
+}
+
+.section-padding-cta {
+    padding: 30px;
 }
 
 h1, h2, h3, h4, a, p {
@@ -253,13 +257,12 @@ h1, h2, h3, h4, a, p {
 }
 
 .ville-logo {
-    width: 90px;
+    width: 190px;
 
 }
 
 .ville-logo img {
-    width: 100%;
-    height: 100%;
+    width: 90px;
 }
 
 .ville-text {
