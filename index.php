@@ -93,7 +93,7 @@
                             </div>
                         </div>
 
-                        <a href="#" class="btn-biblio btn-biblio-full mt-3">Voir tout le programme</a>
+                        <a href="#" class="btn-gueugnon-secondary mt-3">Voir tout le programme →</a>
 
                     </div>
                 </div>
@@ -102,6 +102,28 @@
         </div>
     </div>
 </section>
+
+<section class="ville-banner section-padding">
+    <div class="container">
+        <div class="ville-inner">
+
+            <div class="ville-logo">
+                <img src="logo-gueugnon.jpg" alt="Logo Ville de Gueugnon" />
+            </div>
+
+            <div class="ville-text">
+                <p class="ville-title">La Bibliothèque fait partie de la Ville de Gueugnon</p>
+                <p class="ville-desc">Retrouvez toutes les actualités et services de la commune sur le site officiel.</p>
+            </div>
+
+            <div class="ville-action">
+                <a href="https://www.gueugnon.fr" target="_blank" class="btn-gueugnon-primary">Visiter gueugnon.fr →</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!-- Bootstrap JS -->
