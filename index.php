@@ -112,7 +112,7 @@
             </div>
 
             <div class="ville-text">
-                <p class="ville-title">La Bibliothèque fait partie de la Ville de Gueugnon</p>
+                <h3 class="news-subtitle">La Bibliothèque fait partie de la Ville de Gueugnon</h3>
                 <p class="ville-desc">Retrouvez toutes les actualités et services de la commune sur le site officiel.</p>
             </div>
 
