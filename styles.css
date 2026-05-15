@@ -2,7 +2,7 @@
     --color-primary:    #b10142;
     --color-white:      #ffffff;
     --color-black:      #000000;
-    --color-secondary:  #27ae60;
+    --color-secondary:  #1e7241;
 }
 
 /***************************************************************************************
@@ -279,4 +279,134 @@ h1, h2, h3, h4, a, p {
     font-size: 16px;
     color: #555;
     margin: 0;
+}
+
+/***************************************************************************************
+                                        FOOTER
+***************************************************************************************/
+
+.site-footer {
+    background-color: var(--color-primary);
+    color: rgba(255, 255, 255, 0.85);
+    padding-top: 48px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+}
+
+.footer-col {
+    padding-bottom: 24px;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.footer-links strong {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-white);
+    padding-left: 4px;
+}
+
+.footer-lang {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.footer-lang-btn {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-lang-btn.active,
+.footer-lang-btn:hover {
+    color: var(--color-white);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-legal {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: var(--color-white);
+}
+
+/***************************************************************************************
+                                      RESPONSIVE
+***************************************************************************************/
+
+@media (max-width: 800px) {
+    .ville-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ville-action {
+        width: 100%;
+    }
+
+    .btn-gueugnon-primary {
+        width: 100%;
+        text-align: center;
+    }
 }

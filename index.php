@@ -62,7 +62,7 @@
 
                         <div class="programme-item">
                             <div class="programme-date">
-                                <span class="date-day">09</span>
+                                <span class="date-day">07</span>
                                 <span class="date-month">mai</span>
                             </div>
                             <div class="programme-info">
@@ -88,12 +88,12 @@
                                 <span class="date-month">mai</span>
                             </div>
                             <div class="programme-info">
-                                <span class="prog-title">Titre événement</span>
-                                <span class="prog-meta">Horaire – Lieu</span>
+                                <span class="prog-title">Instant Ludique de Mai</span>
+                                <span class="prog-meta">10h / 17h30 – Bibliothèque de Gueugnon</span>
                             </div>
                         </div>
 
-                        <a href="#" class="btn-gueugnon-secondary mt-3">Voir tout le programme →</a>
+                        <a href="#" class="btn-gueugnon-secondary mt-3">Voir tout le programme =></a>
 
                     </div>
                 </div>
@@ -117,12 +117,78 @@
             </div>
 
             <div class="ville-action">
-                <a href="https://www.gueugnon.fr" target="_blank" class="btn-gueugnon-primary">Visiter gueugnon.fr →</a>
+                <a href="https://www.gueugnon.fr" target="_blank" class="btn-gueugnon-primary">Visiter gueugnon.fr =></a>
             </div>
 
         </div>
     </div>
 </section>
+
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="row footer-top">
+
+            <div class="col-lg-3 col-sm-6 footer-col">
+                <h4 class="footer-title">Infos pratiques</h4>
+                <ul class="footer-links">
+                    <li>Bibliothèque du Pays de Gueugnon</li>
+                    <li>17 rue Jean Bouveri</li>
+                    <li>71130 Gueugnon</li>
+                    <li><a href="tel:0385855140">Tél : 03 85 85 51 40</a></li>
+                    <li><a href="mailto:brm@gueugnon.net">brm@gueugnon.net</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 footer-col">
+                <h4 class="footer-title">Horaires</h4>
+                <ul class="footer-links">
+                    <li><strong>Lundi :</strong> Fermé</li>
+                    <li><strong>Mardi :</strong> 14h – 18h</li>
+                    <li><strong>Mercredi :</strong> 10h – 12h / 14h – 18h</li>
+                    <li><strong>Jeudi :</strong> 10h – 12h / 14h – 18h</li>
+                    <li><strong>Vendredi :</strong> Fermé</li>
+                    <li><strong>Samedi :</strong> 10h – 12h30 / 13h30 – 16h</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 footer-col">
+                <h4 class="footer-title">Navigation rapide</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Au programme</a></li>
+                    <li><a href="#">Nouveautés &amp; Conseils</a></li>
+                    <li><a href="#">Ressources numériques</a></li>
+                    <li><a href="#">Pré-inscription en ligne</a></li>
+                    <li><a href="#">Se connecter</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 footer-col">
+                <h4 class="footer-title">Accessibilité &amp; langue</h4>
+                <div class="footer-lang">
+                    <a href="?lang=fr" class="footer-lang-btn active">FR</a>
+                    <span>|</span>
+                    <a href="?lang=en" class="footer-lang-btn">EN</a>
+                </div>
+                <ul class="footer-links mt-3">
+                    <li><a href="#">Accessibilité (RGAA)</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© Bibliothèque municipale de Gueugnon</span>
+            <div class="footer-legal">
+                <a href="#">Mentions légales</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Gestion des cookies</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
