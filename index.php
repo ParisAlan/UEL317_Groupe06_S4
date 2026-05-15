@@ -74,7 +74,7 @@
                         <div class="programme-item">
                             <div class="programme-date">
                                 <span class="date-day">27</span>
-                                <span class="date-month">Juin</span>
+                                <span class="date-month">Mai</span>
                             </div>
                             <div class="programme-info">
                                 <span class="prog-title">Instant Ludique de Mai</span>
@@ -88,7 +88,7 @@
                                 <span class="date-month">Juin</span>
                             </div>
                             <div class="programme-info">
-                                <span class="prog-title">Instant Ludique de Mai</span>
+                                <span class="prog-title">Instant Ludique de Juin</span>
                                 <span class="prog-meta">10h / 17h30 – Bibliothèque de Gueugnon</span>
                             </div>
                         </div>
