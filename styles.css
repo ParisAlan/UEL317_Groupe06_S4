@@ -1,8 +1,8 @@
 :root {
-    --color-primary:    #b10142;
-    --color-white:      #ffffff;
-    --color-black:      #000000;
-    --color-secondary:  #1e7241;
+    --color-primary: #b10142;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-secondary: #1e7241;
 }
 
 /***************************************************************************************
@@ -67,6 +67,118 @@
 h1, h2, h3, h4, a, p {
     text-decoration: none;
 }
+
+/***************************************************************************************
+                                       CARROUSEL
+***************************************************************************************/
+
+.carousel-img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 75px;
+    opacity: 1;
+    height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(177, 1, 66);
+    border-radius: 50%;
+    padding: 25px;
+    background-size: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: var(--color-primary);
+}
+
+/* Carte coup de coeur */
+.coup-de-coeur {
+    position: absolute;
+    top: 26%;
+    right: 110px;
+    background: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    width: 360px;
+    z-index: 10;
+}
+
+.coup-de-coeur-header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 19px;
+    padding: 10px 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.coup-de-coeur-body {
+    display: flex;
+    gap: 16px;
+    padding: 18px;
+    align-items: center;
+}
+
+.coup-de-coeur-cover {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.coup-de-coeur-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: -webkit-fill-available;
+    justify-content: space-around;
+}
+
+.coup-titre {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.coup-titre-link {
+    text-decoration: none;
+}
+
+.coup-titre-link:hover .coup-titre {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.coup-auteur {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
+
+.coup-btn {
+    margin-top: 8px;
+    font-size: 12px;
+    padding: 8px 14px;
+    align-self: stretch;
+    text-align: center;
+}
+
 
 /***************************************************************************************
                                QUOI DE NEUF A LA BIBLIOTHEQUE ?

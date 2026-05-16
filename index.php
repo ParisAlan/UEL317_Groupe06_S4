@@ -14,19 +14,59 @@
 </head>
 <body>
 
+<section class="carousel-section">
+    <div id="carouselBiblio" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/id/10/1400/500" class="carousel-img" alt="Slide 1" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/20/1400/500" class="carousel-img" alt="Slide 2" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/30/1400/500" class="carousel-img" alt="Slide 3" />
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiblio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBiblio" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <div class="coup-de-coeur">
+            <div class="coup-de-coeur-header">COUP DE CŒUR DU MOIS :</div>
+            <div class="coup-de-coeur-body">
+                <a href="#">
+                    <img src="https://images.epagine.fr/302/9782021602302_1_75.jpg" alt="Couverture du livre" class="coup-de-coeur-cover" />
+                </a>
+                <div class="coup-de-coeur-info">
+                    <div class="coup-de-coeur-info-livre">
+                        <a href="#" class="coup-titre-link">
+                            <p class="coup-titre">La colline</p>
+                        </a>
+                        <p class="coup-auteur">par Beaussault, Mathilde<br/>2026</p>
+                    </div>
+                    <a href="#" class="btn-gueugnon-secondary coup-btn">Accéder au document</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <section class="news-biblio section-padding">
     <div class="container">
 
-        <!-- Titre -->
         <div class="news-biblio-title mb-4">
             <h2>Quoi de neuf à la bibliothèque ?</h2>
             <h3 class="news-subtitle">Joli mois de mai !</h3>
         </div>
 
-        <!-- 3 colonnes -->
         <div class="row g-3">
 
-            <!-- Carte actualité 1 -->
             <div class="col-lg-4 col-sm-12">
                 <a class="#" href="#">
                     <div class="news-card">
@@ -40,7 +80,6 @@
                 </a>
             </div>
 
-            <!-- Carte actualité 2 -->
             <div class="col-lg-4 col-sm-12">
                 <a class="#" href="#">
                     <div class="news-card">
@@ -54,7 +93,6 @@
                 </a>
             </div>
 
-            <!-- Tableau Au programme -->
             <div class="col-lg-4 col-sm-12">
                 <div class="programme-block">
                     <div class="programme-header">AU PROGRAMME :</div>
