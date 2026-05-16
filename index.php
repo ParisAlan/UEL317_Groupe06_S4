@@ -14,6 +14,91 @@
 </head>
 <body>
 
+<header id="site-header">
+
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-inner">
+
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="https://bm.gueugnon.net/data/bm.gueugnon.net/application/layout/logo.png" alt="Bibliothèque de Gueugnon" class="logo-img" />
+                    </a>
+                </div>
+
+                <div class="search-wrapper">
+                    <div class="search-bar">
+                        <input type="search" placeholder="Rechercher dans le catalogue..." aria-label="Recherche" />
+                        <button type="submit" class="btn-search" aria-label="Lancer la recherche">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                    <div class="search-filters">
+                        <div class="filter-dropdown">
+                            <button class="filter-btn">Tous critères <i class="bi bi-chevron-down"></i></button>
+                            <ul class="filter-menu">
+                                <li><a href="#">Tous critères</a></li>
+                                <li><a href="#">Titre, auteur, sujet</a></li>
+                                <li><a href="#">Titre</a></li>
+                                <li><a href="#">Auteur</a></li>
+                                <li><a href="#">Sujet</a></li>
+                                <li><a href="#">Editeur</a></li>
+                                <li><a href="#">Collection</a></li>
+                                <li><a href="#">Série</a></li>
+                                <li><a href="#">Revues</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-dropdown">
+                            <button class="filter-btn">Sur tous les sites du réseau <i class="bi bi-chevron-down"></i></button>
+                            <ul class="filter-menu">
+                                <li><a href="#">Bibliothèque de Gueugnon</a></li>
+                                <li><a href="#">Bibliobus</a></li>
+                                <li><a href="#">Bibliothèque de Neuvy-Grandchamp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="topbar-actions">
+                    <a href="#" class="icon-link" title="Aide"><i class="bi bi-question-circle"></i></a>
+                    <a href="#" class="icon-link" title="Accessibilité"><i class="bi bi-universal-access"></i></a>
+                    <div class="lang-switcher">
+                        <a href="?lang=fr" class="lang-btn active" hreflang="fr">FR</a>
+                        <span class="lang-sep">|</span>
+                        <a href="?lang=en" class="lang-btn" hreflang="en">EN</a>
+                    </div>
+                    <a href="#" class="btn-gueugnon-primary">Mon compte</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+        <div class="container">
+            <ul class="nav-list">
+
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link-btn">Infos pratiques <i class="bi bi-chevron-down nav-chevron"></i></a>
+                    <ul class="dropdown-nav">
+                        <li><a href="#">Bibliothèque de Gueugnon</a></li>
+                        <li><a href="#">Bibliobus</a></li>
+                        <li><a href="#">Bibliothèque de Neuvy-Grandchamp</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a href="#" class="nav-link-btn">Au programme</a></li>
+                <li class="nav-item"><a href="#" class="nav-link-btn">Nouveautés & Conseils</a></li>
+                <li class="nav-item"><a href="#" class="nav-link-btn">Ressources numériques</a></li>
+                <li class="nav-item"><a href="#" class="nav-link-btn">Pré-inscription</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
 <section class="carousel-section">
     <div id="carouselBiblio" class="carousel slide" data-bs-ride="carousel">
 
