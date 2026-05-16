@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Bibliothèque de Gueugnon</title>
+    <meta name="description"
+          content="Bibliothèque municipale de Gueugnon — catalogue en ligne, horaires, programme des événements et ressources numériques."/>
+    <title>Accueil — Bibliothèque de Gueugnon</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
@@ -13,7 +15,7 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
+<a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
 <header id="site-header">
 
     <div class="topbar">
@@ -22,47 +24,52 @@
 
                 <div class="header-logo">
                     <a href="#">
-                        <img src="https://bm.gueugnon.net/data/bm.gueugnon.net/application/layout/logo.png" alt="Bibliothèque de Gueugnon" class="logo-img" />
+                        <img src="https://bm.gueugnon.net/data/bm.gueugnon.net/application/layout/logo.png"
+                             alt="Bibliothèque de Gueugnon" class="logo-img"/>
                     </a>
                 </div>
 
                 <div class="search-wrapper">
-                    <div class="search-bar">
-                        <input type="search" placeholder="Rechercher dans le catalogue..." aria-label="Recherche" />
-                        <button type="submit" class="btn-search" aria-label="Lancer la recherche">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                    <div class="search-filters">
-                        <div class="filter-dropdown">
-                            <button class="filter-btn">Tous critères <i class="bi bi-chevron-down"></i></button>
-                            <ul class="filter-menu">
-                                <li><a href="#">Tous critères</a></li>
-                                <li><a href="#">Titre, auteur, sujet</a></li>
-                                <li><a href="#">Titre</a></li>
-                                <li><a href="#">Auteur</a></li>
-                                <li><a href="#">Sujet</a></li>
-                                <li><a href="#">Editeur</a></li>
-                                <li><a href="#">Collection</a></li>
-                                <li><a href="#">Série</a></li>
-                                <li><a href="#">Revues</a></li>
-                            </ul>
+                    <form role="search" action="recherche.php" method="GET">
+                        <div class="search-bar">
+                            <label for="search-input" class="visually-hidden">Rechercher dans le catalogue</label>
+                            <input id="search-input" type="search" name="q" placeholder="Rechercher dans le catalogue..." />
+                            <button type="submit" class="btn-search" aria-label="Lancer la recherche">
+                                <i class="bi bi-search" aria-hidden="true"></i>
+                            </button>
                         </div>
-                        <div class="filter-dropdown">
-                            <button class="filter-btn">Sur tous les sites du réseau <i class="bi bi-chevron-down"></i></button>
-                            <ul class="filter-menu">
-                                <li><a href="#">Bibliothèque de Gueugnon</a></li>
-                                <li><a href="#">Bibliobus</a></li>
-                                <li><a href="#">Bibliothèque de Neuvy-Grandchamp</a></li>
-                            </ul>
+                        <div class="search-filters">
+                            <div class="filter-dropdown">
+                                <button type="button" class="filter-btn">Tous critères <i class="bi bi-chevron-down" aria-hidden="true"></i></button>
+                                <ul class="filter-menu">
+                                    <li><a href="#">Tous critères</a></li>
+                                    <li><a href="#">Titre, auteur, sujet</a></li>
+                                    <li><a href="#">Titre</a></li>
+                                    <li><a href="#">Auteur</a></li>
+                                    <li><a href="#">Sujet</a></li>
+                                    <li><a href="#">Editeur</a></li>
+                                    <li><a href="#">Collection</a></li>
+                                    <li><a href="#">Série</a></li>
+                                    <li><a href="#">Revues</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-dropdown">
+                                <button type="button" class="filter-btn">Sur tous les sites du réseau <i class="bi bi-chevron-down" aria-hidden="true"></i></button>
+                                <ul class="filter-menu">
+                                    <li><a href="#">Bibliothèque de Gueugnon</a></li>
+                                    <li><a href="#">Bibliobus</a></li>
+                                    <li><a href="#">Bibliothèque de Neuvy-Grandchamp</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
 
                 <div class="topbar-actions">
-                    <a href="#" class="icon-link" title="Aide"><i class="bi bi-question-circle"></i></a>
-                    <a href="#" class="icon-link" title="Accessibilité"><i class="bi bi-universal-access"></i></a>
+                    <a href="#" class="icon-link" title="Aide"><i class="bi bi-question-circle" aria-hidden="true"></i></a>
+                    <a href="#" class="icon-link" title="Accessibilité"><i class="bi bi-eye-slash"
+                                                                           aria-hidden="true"></i></a>
                     <div class="lang-switcher">
                         <a href="?lang=fr" class="lang-btn active" hreflang="fr">FR</a>
                         <span class="lang-sep">|</span>
@@ -80,7 +87,8 @@
             <ul class="nav-list">
 
                 <li class="nav-item has-dropdown">
-                    <a href="#" class="nav-link-btn">Infos pratiques <i class="bi bi-chevron-down nav-chevron"></i></a>
+                    <a href="#" class="nav-link-btn">Infos pratiques <i class="bi bi-chevron-down nav-chevron"
+                                                                        aria-hidden="true"></i></a>
                     <ul class="dropdown-nav">
                         <li><a href="#">Bibliothèque de Gueugnon</a></li>
                         <li><a href="#">Bibliobus</a></li>
@@ -99,154 +107,162 @@
 
 </header>
 
-<section class="carousel-section">
-    <div id="carouselBiblio" class="carousel slide" data-bs-ride="carousel">
+<main id="contenu-principal">
+    <section class="carousel-section">
+        <div id="carouselBiblio" class="carousel slide" data-bs-ride="carousel">
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://picsum.photos/id/10/1400/500" class="carousel-img" alt="Slide 1" />
-            </div>
-            <div class="carousel-item">
-                <img src="https://picsum.photos/id/20/1400/500" class="carousel-img" alt="Slide 2" />
-            </div>
-            <div class="carousel-item">
-                <img src="https://picsum.photos/id/30/1400/500" class="carousel-img" alt="Slide 3" />
-            </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiblio" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselBiblio" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-
-        <div class="coup-de-coeur">
-            <div class="coup-de-coeur-header">COUP DE CŒUR DU MOIS :</div>
-            <div class="coup-de-coeur-body">
-                <a href="#">
-                    <img src="https://images.epagine.fr/302/9782021602302_1_75.jpg" alt="Couverture du livre" class="coup-de-coeur-cover" />
-                </a>
-                <div class="coup-de-coeur-info">
-                    <div class="coup-de-coeur-info-livre">
-                        <a href="#" class="coup-titre-link">
-                            <p class="coup-titre">La colline</p>
-                        </a>
-                        <p class="coup-auteur">par Beaussault, Mathilde<br/>2026</p>
-                    </div>
-                    <a href="#" class="btn-gueugnon-secondary coup-btn">Accéder au document</a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/10/1400/500" class="carousel-img" alt="Slide 1"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/20/1400/500" class="carousel-img" alt="Slide 2"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/30/1400/500" class="carousel-img" alt="Slide 3"/>
                 </div>
             </div>
-        </div>
 
-    </div>
-</section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiblio" data-bs-slide="prev" aria-label="Diapositive précédente">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBiblio" data-bs-slide="next" aria-label="Diapositive suivante">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
 
-<section class="news-biblio section-padding">
-    <div class="container">
-
-        <div class="news-biblio-title mb-4">
-            <h2>Quoi de neuf à la bibliothèque ?</h2>
-            <h3 class="news-subtitle">Joli mois de mai !</h3>
-        </div>
-
-        <div class="row g-3">
-
-            <div class="col-lg-4 col-sm-12">
-                <a class="#" href="#">
-                    <div class="news-card">
-                        <img src="https://picsum.photos/id/24/600/400" alt="Actualité" class="news-card-img"/>
-                        <div class="news-card-body">
-                            <h3 class="news-card-title">Titre</h3>
-                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                eiusmod tempor incididunt.</p>
+            <div class="coup-de-coeur">
+                <div class="coup-de-coeur-header">COUP DE CŒUR DU MOIS :</div>
+                <div class="coup-de-coeur-body">
+                    <a href="#">
+                        <img src="https://images.epagine.fr/302/9782021602302_1_75.jpg" alt="Couverture du livre"
+                             class="coup-de-coeur-cover"/>
+                    </a>
+                    <div class="coup-de-coeur-info">
+                        <div class="coup-de-coeur-info-livre">
+                            <a href="#" class="coup-titre-link" aria-label="Accéder au document : La colline">
+                                <p class="coup-titre">La colline</p>
+                            </a>
+                            <p class="coup-auteur">par Beaussault, Mathilde<br/>2026</p>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <a class="#" href="#">
-                    <div class="news-card">
-                        <img src="https://picsum.photos/id/37/600/400" alt="Actualité" class="news-card-img"/>
-                        <div class="news-card-body">
-                            <h3 class="news-card-title">Titre</h3>
-                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                eiusmod tempor incididunt.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <div class="programme-block">
-                    <div class="programme-header">AU PROGRAMME :</div>
-                    <div class="programme-list">
-
-                        <div class="programme-item">
-                            <div class="programme-date">
-                                <span class="date-day">09</span>
-                                <span class="date-month">mai</span>
-                            </div>
-                            <div class="programme-info">
-                                <span class="prog-title">Sonate au Jardin</span>
-                                <span class="prog-meta">13h30 / 19h – Parc du Château d'Aux</span>
-                            </div>
-                        </div>
-
-                        <div class="programme-item">
-                            <div class="programme-date">
-                                <span class="date-day">27</span>
-                                <span class="date-month">Mai</span>
-                            </div>
-                            <div class="programme-info">
-                                <span class="prog-title">Instant Ludique de Mai</span>
-                                <span class="prog-meta">10h / 17h30 – Bibliothèque de Gueugnon</span>
-                            </div>
-                        </div>
-
-                        <div class="programme-item">
-                            <div class="programme-date">
-                                <span class="date-day">27</span>
-                                <span class="date-month">Juin</span>
-                            </div>
-                            <div class="programme-info">
-                                <span class="prog-title">Instant Ludique de Juin</span>
-                                <span class="prog-meta">10h / 17h30 – Bibliothèque de Gueugnon</span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn-gueugnon-secondary mt-3">Voir tout le programme =></a>
-
+                        <a href="#" class="btn-gueugnon-secondary coup-btn" aria-label="Accéder au document La colline de Beaussault Mathilde">Accéder au document</a>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="ville-banner section-padding-cta">
-    <div class="container">
-        <div class="ville-inner">
+    <section class="news-biblio section-padding">
+        <div class="container">
 
-            <div class="ville-logo">
-                <img src="logo-gueugnon.jpg" alt="Logo Ville de Gueugnon" />
+            <div class="news-biblio-title mb-4">
+                <h1>Quoi de neuf à la bibliothèque ?</h1>
+                <h2 class="news-subtitle">Joli mois de mai !</h2>
             </div>
 
-            <div class="ville-text">
-                <h3 class="news-subtitle">La Bibliothèque fait partie de la Ville de Gueugnon</h3>
-                <p class="ville-desc">Retrouvez toutes les actualités et services de la commune sur le site officiel.</p>
-            </div>
+            <div class="row g-3">
 
-            <div class="ville-action">
-                <a href="https://www.gueugnon.fr" target="_blank" class="btn-gueugnon-primary">Visiter gueugnon.fr =></a>
-            </div>
+                <div class="col-lg-4 col-sm-12">
+                    <a href="#">
+                        <div class="news-card">
+                            <img src="https://picsum.photos/id/24/600/400" alt="Actualité" class="news-card-img"/>
+                            <div class="news-card-body">
+                                <h3 class="news-card-title">Titre</h3>
+                                <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                    do
+                                    eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
+                <div class="col-lg-4 col-sm-12">
+                    <a href="#">
+                        <div class="news-card">
+                            <img src="https://picsum.photos/id/37/600/400" alt="Actualité" class="news-card-img"/>
+                            <div class="news-card-body">
+                                <h3 class="news-card-title">Titre</h3>
+                                <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                    do
+                                    eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="programme-block">
+                        <div class="programme-header">AU PROGRAMME :</div>
+                        <div class="programme-list">
+
+                            <div class="programme-item">
+                                <div class="programme-date">
+                                    <span class="date-day">09</span>
+                                    <span class="date-month">mai</span>
+                                </div>
+                                <div class="programme-info">
+                                    <span class="prog-title">Sonate au Jardin</span>
+                                    <span class="prog-meta">13h30 / 19h – Parc du Château d'Aux</span>
+                                </div>
+                            </div>
+
+                            <div class="programme-item">
+                                <div class="programme-date">
+                                    <span class="date-day">27</span>
+                                    <span class="date-month">Mai</span>
+                                </div>
+                                <div class="programme-info">
+                                    <span class="prog-title">Instant Ludique de Mai</span>
+                                    <span class="prog-meta">10h / 17h30 – Bibliothèque de Gueugnon</span>
+                                </div>
+                            </div>
+
+                            <div class="programme-item">
+                                <div class="programme-date">
+                                    <span class="date-day">27</span>
+                                    <span class="date-month">Juin</span>
+                                </div>
+                                <div class="programme-info">
+                                    <span class="prog-title">Instant Ludique de Juin</span>
+                                    <span class="prog-meta">10h / 17h30 – Bibliothèque de Gueugnon</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn-gueugnon-secondary mt-3">Voir tout le programme =></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section class="ville-banner section-padding-cta">
+        <div class="container">
+            <div class="ville-inner">
+
+                <div class="ville-logo">
+                    <img src="logo-gueugnon.jpg" alt="Logo Ville de Gueugnon"/>
+                </div>
+
+                <div class="ville-text">
+                    <h3 class="news-subtitle">La Bibliothèque fait partie de la Ville de Gueugnon</h3>
+                    <p class="ville-desc">Retrouvez toutes les actualités et services de la commune sur le site
+                        officiel.</p>
+                </div>
+
+                <div class="ville-action">
+                    <a href="https://www.gueugnon.fr" target="_blank" rel="noopener noreferrer" class="btn-gueugnon-primary">
+                        Visiter gueugnon.fr =>
+                        <span class="visually-hidden">(ouvre dans un nouvel onglet)</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
 <footer class="site-footer">
     <div class="container">
 
